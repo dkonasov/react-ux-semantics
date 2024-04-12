@@ -1,7 +1,7 @@
 {
-    "compilerOptions": {
-        "moduleResolution": "Bundler",
-        "declaration": true
-    },
-    "include": [ "src" ]
+  "compilerOptions": {
+    "moduleResolution": "Bundler",
+    "declaration": true
+  },
+  "include": ["src"]
 }
