@@ -1,0 +1,71 @@
+{
+  "name": "react-ux-semantics",
+  "version": "1.0.0",
+  "description": "A collection of style-agnostic ux semantics patterns for toasts, dialogs and more, based on React hooks",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "build": "vite build",
+    "lint": "eslint .",
+    "format": "prettier . --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkonasov/react-ux-semantics.git"
+  },
+  "keywords": [
+    "react",
+    "semantics",
+    "hooks",
+    "ux",
+    "toast",
+    "autohide"
+  ],
+  "author": "Dmitrii Konasov <d.konasov@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkonasov/react-ux-semantics/issues"
+  },
+  "homepage": "https://github.com/dkonasov/react-ux-semantics#readme",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^15.0.2",
+    "@types/react": "^18.2.73",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.34.1",
+    "jsdom": "^24.0.0",
+    "prettier": "3.2.5",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.7",
+    "vitest": "^1.5.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./autohide": {
+      "import": "./dist/autohide.js",
+      "require": "./dist/autohide.cjs"
+    },
+    "./showable": {
+      "import": "./dist/showable.js",
+      "require": "./dist/showable.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}

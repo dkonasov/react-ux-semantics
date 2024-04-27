@@ -12,9 +12,9 @@ jobs:
         with:
           node-version: '20'
       - name: Install dependencies
-        run: npm ci
+        run: npm ci -w react-ux-semantics
       - name: Run linter
-        run: npm run lint
+        run: npm run lint -w react-ux-semantics
   test:
     name: Test
     runs-on: ubuntu-latest
@@ -26,4 +26,4 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run tests
-        run: npm run test
+        run: npm run test -w react-ux-semantics
