@@ -27,7 +27,7 @@ export const ComponentWithVisiblityManagement = () => {
 ### useAutohide
 
 ```ts
-declare function useShowable(time: number): [boolean, () => void, () => void];
+declare function useAutohide(time: number): [boolean, () => void, () => void];
 ```
 
 #### Arguments
